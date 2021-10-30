@@ -1,0 +1,30 @@
+<section class="heroBlockHolder position-relative w-100 pt-xl-24 pb-xl-12 px-xl-17 pt-lg-16 pb-lg-12 pt-md-16 pb-md-0 pt-6">
+  <div class="slick-fade">
+
+    <div class="holder overflow-hidden">
+      <!-- holder -->
+      <div class="containerHolder d-flex flex-wrap px-3 mx-auto">
+        <!-- py-12 pt-lg-30 pb-lg-25 -->
+        <div class="coll-6 position-relative">
+          <img src="assets/images/img34.png" alt="image description" class="img-fluid">
+        </div>
+        <div class="coll-6 pt-lg-17">
+          <strong class="title d-block text-uppercase fwEbold position-relative pt-lg-0 pt-2 mb-xl-22 mb-lg-12 mb-md-6 mb-3">welcome to botanical store <span class="d-block">the perfect choice</span></strong>
+          <div class="txtwrap position-relative pt-xl-19 pb-xl-35 pt-lg-15 pb-lg-25 py-0">
+            <span class="subTitle d-block mb-lg-4 mb-2">Make an account</span>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit($event)" >
+            <input type="text" formControlName="firstname" class="form-control email px-4 border-0" placeholder="Enter your first name...">
+            <input type="text" formControlName="lastname" class="form-control px-4 border-0" placeholder="Enter your last name...">
+            <input type="email" formControlName="username" class="form-control  px-4 border-0" placeholder="Enter your mail...">
+            <input type="password" formControlName="password" class="form-control px-4 border-0" placeholder="Enter your password...">
+            <a class="btn btnTheme btnShop fwEbold text-white md-round py-3 px-4 mb-sm-6" (click)="onSubmit($event)">register <i class="fas fa-arrow-right ml-2"></i></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+

@@ -1,0 +1,61 @@
+<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(assets/images/img.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
+        <h1 class="headingIV fwEbold playfair mb-4">Shop</h1>
+        <ul class="list-unstyled breadCrumbs d-flex justify-content-center">
+          <li class="mr-2"><a href="home.html">Home</a></li>
+          <li class="mr-2">/</li>
+          <li class="mr-2"><a href="shop.html">Shop</a></li>
+          <li class="mr-2">/</li>
+          <li class="active">{{product.name}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- twoColumns -->
+<div class="twoColumns container pt-xl-23 pb-xl-20 pt-lg-20 pb-lg-20 py-md-16 py-10">
+  <div class="row mb-6">
+    <div class="col-12 col-lg-6 order-lg-1">
+      <!-- productSliderImage -->
+      <div class="productSliderImage mb-lg-0 mb-4">
+        <div>
+          <img src="assets/images/{{product.picture}}" style="    height: 487px;" alt="image description" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-3">
+      <!-- productTextHolder -->
+      <div class="productTextHolder overflow-hidden">
+        <h2 class="fwEbold mb-2">{{product.name}}</h2>
+        <ul class="list-unstyled ratingList d-flex flex-nowrap mb-2">
+          <li class="mr-2"><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+          <li class="mr-2"><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+          <li class="mr-2"><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+          <li class="mr-2"><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+          <li class="mr-2"><a href="javascript:void(0);"><i class="far fa-star"></i></a></li>
+          <li>( 5 customer reviews )</li>
+        </ul>
+        <strong class="price d-block mb-5 text-green">{{product.price}} $</strong>
+        <p class="mb-5">{{product.description}}</p>
+        <ul class="list-unstyled productInfoDetail mb-5 overflow-hidden">
+          <li class="mb-2">Product Code: <span>{{product.id}}</span></li>
+          <li class="mb-2">Shipping tax: <span>Free</span></li>
+        </ul>
+
+        <div class="holder overflow-hidden d-flex flex-wrap mb-6">
+          <input type="number" placeholder="1">
+          <a href="javascript:void(0);" class="btn btnTheme btnShop fwEbold text-white md-round py-3 px-4 py-md-3 px-md-4">Add To Cart <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        <ul class="list-unstyled socialNetwork d-flex flex-wrap mb-sm-11 mb-4">
+          <li class="text-uppercase mr-5">SHARE THIS PRODUCT:</li>
+          <li class="mr-4"><a href="javascript:void(0);" class="fab fa-facebook-f"></a></li>
+          <li class="mr-4"><a href="javascript:void(0);" class="fab fa-google-plus-g"></a></li>
+          <li class="mr-4"><a href="javascript:void(0);" class="fab fa-twitter"></a></li>
+          <li class="mr-4"><a href="javascript:void(0);" class="fab fa-pinterest-p"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

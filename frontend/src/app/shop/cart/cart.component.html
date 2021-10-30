@@ -1,0 +1,58 @@
+<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(assets/images/img.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
+        <h1 class="headingIV fwEbold playfair mb-4">My Cart</h1>
+        <ul class="list-unstyled breadCrumbs d-flex justify-content-center">
+          <li class="mr-sm-2 mr-1"><a routerLink="/" >Home</a></li>
+          <li class="mr-sm-2 mr-1">/</li>
+          <li class="mr-sm-2 mr-1"><a routerLink="/shop">Shop</a></li>
+          <li class="mr-sm-2 mr-1">/</li>
+          <li class="active">My Cart</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- cartHolder -->
+<div class="cartHolder container pt-xl-21 pb-xl-24 py-lg-20 py-md-16 py-10">
+  <div class="row">
+    <!-- table-responsive -->
+    <div class="col-12 table-responsive mb-xl-22 mb-lg-20 mb-md-16 mb-10">
+      <!-- cartTable -->
+      <table class="table cartTable">
+        <thead>
+        <tr>
+          <th scope="col" class="text-uppercase fwEbold border-top-0">product</th>
+          <th scope="col" class="text-uppercase fwEbold border-top-0">price</th>
+          <th scope="col" class="text-uppercase fwEbold border-top-0"></th>
+          <th scope="col" class="text-uppercase fwEbold border-top-0">total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="align-items-center" *ngFor="let product of productList">
+          <td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
+            <div class="imgHolder">
+              <img src="assets/images/{{product.picture}}" alt="image description" class="img-fluid">
+            </div>
+            <span class="title pl-2"><a href="shop-detail.html">{{product.name}}</a></span>
+          </td>
+          <td class="fwEbold border-top-0 border-bottom px-0 py-6">{{product.price}} $</td>
+          <td class="border-top-0 border-bottom px-0 py-6"><input type="number" disabled placeholder="1"></td>
+          <td class="fwEbold border-top-0 border-bottom px-0 py-6">{{product.price}} $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 col-md-6 ">
+      <div class="d-flex align-content-center">
+        <strong class="txt fwEbold text-uppercase mb-1">subtotal</strong>
+        <strong class="price fwEbold text-uppercase mb-1">{{subTotal}} $</strong>
+      </div>
+      <a href="javascript:void(0);" class="btn btnTheme w-100 fwEbold text-center text-white md-round py-3 px-4 py-md-3 px-md-4">Proceed to checkout</a>
+    </div>
+  </div>
+</div>
