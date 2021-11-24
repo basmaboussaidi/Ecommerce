@@ -1,6 +1,5 @@
 package com.basma.ecommerce.security;
 
-package com.hadil.ecommerce.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
